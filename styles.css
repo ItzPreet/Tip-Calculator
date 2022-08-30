@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 700px;
+    margin: auto;
+    background-image: url("1.jpg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.calculator-container {
+    background-color: rgba(246, 222, 198, 0.5);
+    height: 500px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+	position: absolute;
+}
+
+.data-for-calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 50px 10px 50px;
+}
+
+.data-for-calculator input, select {
+    margin: 10px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+	border: none;
+	border-bottom: 1px solid #0074d9;
+	padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+select {
+    width: 112%;
+}
+
+.data-for-calculator input:focus, select:focus {
+	border: 1px solid #0074d9;
+	outline: none;
+}
+
+
+.title h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #ff851b;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0 10px 10px 10px;
+}
+
+.button-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+	margin: 10px auto;
+	width: 150px;
+	height: 50px;
+	background-color: #ff851b;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	border-radius: 35px;
+    font-weight: bold;
+}
+
+button:hover {
+	background-color: #f67606;
+	color: #fff;
+	border: none;
+	border-radius: 50px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+p {
+    font-weight: bold;
+}
+.calculate-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+
+.calculate-result p {
+    margin: 5px 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+}
+
+.result > p:first-child {
+    margin-right: 10px;
+}
+
+.result > p:last-child {
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-image: url("vertical background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .calculator-container {
+        width: 400px;
+    }
+}
