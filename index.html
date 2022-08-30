@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="title">
+            <h1>Tip Calculator</h1>
+        </div>
+        <div class="wrapper">
+            <form class="data-for-calculator">
+                <table>
+                    <tr>
+                        <td>
+                            <p>Bill Amount</p>
+                        </td>
+                        <td>
+                            <input type="text" id="amount" placeholder="Amount to be paid">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>How was the service?</p>
+                        </td>
+                        <td>
+                            <select id="services">
+                                <option selected disabled hidden>
+                                    Select
+                                </option>
+                                <option value="0.25">25% - Top Notch</option>
+                                <option value="0.20">20% - Excellent</option>
+                                <option value="0.15">15% - Good</option>
+                                <option value="0.10">10% - Bad</option>
+                                <option value="0.05">5% - Worst</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Total number of persons</p>
+                        </td>
+                        <td>
+                            <input type="text" id="persons" placeholder="Number of people sharing the bill">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="button-flex">
+            <button onclick="calculateTip()" type="button" id="calculate-button" value="Calculate">Calculate</button>
+        </div>
+        <div class="calculate-result">
+            <div class="result">
+                <p>Total Tip:</p>
+                <p id="totalTip"></p>
+            </div>
+            <div class="result">
+                <p>Tip per person:</p>
+                <p id="tipPerPerson"></p>
+            </div>
+            <div class="result">
+                <p>Total Bill:</p>
+                <p id="totalBill"></p>
+            </div>
+            <div class="result">
+                <p>Total bill per person:</p>
+                <p id="totalBillPerPerson"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
